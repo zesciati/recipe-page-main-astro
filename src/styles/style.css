@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root {
+
+  /* color */
+  --white: oklch(1 0 0);
+  --Stone-100: oklch(0.9307 0.0238 67.53);
+  --Stone-150: oklch(0.9032 0.0104 67.69);
+  --Stone-600: oklch(0.4613 0.0178 67.36);
+  --Stone-900: oklch(0.3012 0.0052 56.2);
+  --Brown-800: oklch(0.4671 0.09203 37.7057);
+  --Rose-800: oklch(0.4141 0.1222 354.94);
+  --Rose-50: oklch(0.9789 0.0128 345.48);
+
+  /* spacing */
+  --space-3xs: clamp(0.1875rem, 0.1435rem + 0.1878vw, 0.3125rem);
+  --space-2xs: clamp(0.375rem, 0.287rem + 0.3756vw, 0.625rem);
+  --space-xs: clamp(0.5625rem, 0.4305rem + 0.5634vw, 0.9375rem);
+  --space-s: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+  --space-m: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem);
+  --space-l: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  --space-xl: clamp(2.25rem, 1.7218rem + 2.2535vw, 3.75rem);
+  --space-2xl: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  --space-3xl: clamp(4.5rem, 3.4437rem + 4.507vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.1875rem, 0.0335rem + 0.6573vw, 0.625rem);
+  --space-2xs-xs: clamp(0.375rem, 0.1769rem + 0.8451vw, 0.9375rem);
+  --space-xs-s: clamp(0.5625rem, 0.3204rem + 1.0329vw, 1.25rem);
+  --space-s-m: clamp(0.75rem, 0.3539rem + 1.6901vw, 1.875rem);
+  --space-m-l: clamp(1.125rem, 0.6408rem + 2.0657vw, 2.5rem);
+  --space-l-xl: clamp(1.5rem, 0.7077rem + 3.3803vw, 3.75rem);
+  --space-xl-2xl: clamp(2.25rem, 1.2817rem + 4.1315vw, 5rem);
+  --space-2xl-3xl: clamp(3rem, 1.4155rem + 6.7606vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
+
+  /* font 14px-20px */
+  --step--2: clamp(0.5208rem, 0.4225rem + 0.4194vw, 0.8rem);
+  --step--1: clamp(0.625rem, 0.493rem + 0.5634vw, 1rem);
+  --step-0: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+  --step-1: clamp(0.9rem, 0.6667rem + 0.9953vw, 1.5625rem);
+  --step-2: clamp(1.08rem, 0.7726rem + 1.3117vw, 1.9531rem);
+  --step-3: clamp(1.296rem, 0.8927rem + 1.7208vw, 2.4414rem);
+  --step-4: clamp(1.5552rem, 1.0282rem + 2.2483vw, 3.0518rem);
+  --step-5: clamp(1.8662rem, 1.1802rem + 2.9273vw, 3.8147rem);
+
+  /* font 22px-30px */
+  --step--2-larger: clamp(0.9549rem, 0.8685rem + 0.3683vw, 1.2rem);
+  --step--1-larger: clamp(1.1458rem, 1.0211rem + 0.5321vw, 1.5rem);
+  --step-0-larger: clamp(1.375rem, 1.1989rem + 0.7512vw, 1.875rem);
+  --step-1-larger: clamp(1.65rem, 1.4057rem + 1.0423vw, 2.3438rem);
+  --step-2-larger: clamp(1.98rem, 1.6456rem + 1.4268vw, 2.9297rem);
+  --step-3-larger: clamp(2.376rem, 1.9231rem + 1.9322vw, 3.6621rem);
+  --step-4-larger: clamp(2.8512rem, 2.2433rem + 2.5937vw, 4.5776rem);
+  --step-5-larger: clamp(3.4214rem, 2.6114rem + 3.4563vw, 5.722rem);
+
+  --font-youngserif: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --lineheight: 1.5;
+
+}
+
+body {
+  background-color: var(--white);
+}
+
+
+header img {
+  max-inline-size: 100%;
+  height: auto;
+  /* width: 550px; */
+  /* padding: none; */
+}
+
+
+main {
+  padding: var(--space-l);
+  font-size: var(--step-2);
+}
+
+main h1 {
+  font-family: var(--font-youngserif);
+  font-weight: 400;
+  font-size: var(--step-3-larger);
+  margin-bottom: var(--space-l);
+  text-transform: capitalize;
+}
+
+main p {
+  font-family: var(--font-outfit);
+  line-height: var(--lineheight);
+  color: var(--Stone-600);
+  margin-bottom: var(--space-l);
+  font-size: var(--step-2);
+
+}
+
+.preparation-time {
+  background-color: var(--Rose-50);
+  padding: var(--space-m);
+}
+
+.preparation-time h3 {
+  color: var(--Rose-800);
+  font-family: var(--font-outfit);
+  font-weight: 600;
+}
+
+.preparation-time ul {
+  padding: var(--space-m);
+  max-width: 90%;
+}
+
+.preparation-time ul li {
+  font-family: var(--font-outfit);
+  /* memberikan jarak antara li bullet dan text */
+  padding-left: 1rem;
+  color: var(--Rose-800);
+  margin-left: .45rem;
+  font-size: var(--step-2);
+}
+
+.preparation-time ul .preps {
+  margin-block: var(--space-xs);
+}
+
+.preparation-time span,
+.instructions span {
+  font-weight: 600;
+  color: var(--Stone-900);
+  font-size: var(--step-2);
+
+}
+
+.ingredients {
+  margin-bottom: 2rem;
+}
+
+.ingredients h1,
+.instructions h1,
+.nutrition h1 {
+  font-family: var(--font-youngserif);
+  font-weight: 400;
+  font-size: var(--step-2-larger);
+  color: var(--Brown-800);
+  margin-top: 2rem;
+}
+
+.ingredients ul {
+  padding-inline: var(--space-m);
+}
+
+.ingredients ul li {
+  margin-bottom: var(--space-s);
+  font-family: var(--font-outfit);
+  padding-left: 1rem;
+  color: var(--Brown-800);
+  font-size: var(--step-2);
+}
+
+.ingredients ul li span {
+  color: var(--Stone-600);
+}
+
+.instructions {
+  margin-bottom: 2rem;
+}
+
+.instructions ol {
+  padding-inline: var(--space-m);
+
+}
+
+.instructions ol li {
+  font-family: var(--font-outfit);
+  margin-bottom: var(--space-m);
+  font-size: var(--step-2);
+  padding-left: 1rem;
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+
+.nutrition p {
+  font-family: var(--font-outfit);
+  line-height: var(--lineheight);
+  color: var(--Stone-600);
+  font-size: var(--step-2);
+}
+
+.table-nutrition {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  grid-template-areas:
+    "calories kcal"
+    "carbs carbsgram"
+    "protein proteingram"
+    "fat fatgram";
+  /* place-items: center; */
+  margin-right: var(--space-xl);
+}
+
+.table-nutrition p {
+  width: 120%;
+  /* padding: .2rem 0; */
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  /* black line */
+  font-size: var(--step-2);
+  font-weight: 400;
+  font-family: var(--font-outfit);
+  /* memberikan jarak dalam grid */
+  text-indent: 20%;
+}
+
+.calories {
+  grid-area: calories;
+}
+
+.carbs {
+  grid-area: carbs;
+}
+
+.protein {
+  grid-area: protein;
+}
+
+.fat {
+  grid-area: fat;
+}
+
+.kcal {
+  grid-area: kcal;
+}
+
+.carbsgram {
+  grid-area: carbsgram;
+}
+
+.proteingram {
+  grid-area: proteingram;
+}
+
+.fatgram {
+  grid-area: fatgram;
+}
+
+.table-nutrition .kcal,
+.table-nutrition .carbsgram,
+.table-nutrition .proteingram,
+.table-nutrition .fatgram {
+  color: var(--Brown-800);
+  font-size: var(--step-2);
+  font-weight: 600;
+  font-family: var(--font-outfit);
+}
+
+@media (min-width: 640px) {
+  body {
+    background: var(--Stone-100);
+    padding: var(--space-xl);
+  }
+
+  header,
+  main {
+    background-color: var(--white);
+    padding: var(--space-m);
+  }
+
+  header {
+    border-radius: 10px 10px 0 0;
+  }
+
+  main {
+    border-radius: 0 0 10px 10px;
+  }
+
+}
+
+@media (min-width: 748px) {
+  body {
+    padding-inline: 7rem;
+  }
+
+  main h1 {
+    font-size: var(--step-2-larger);
+  }
+
+  main p,
+  .preparation-time ul li,
+  .preparation-time span,
+  .instructions span,
+  .ingredients ul li,
+  .instructions ol li,
+  .nutrition p,
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table- nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-1);
+  }
+
+  .preparation-time h3 {
+    font-size: var(--step-0-larger);
+  }
+
+  .ingredients h1,
+  .instructions h1,
+  .nutrition h1 {
+    font-size: var(--step-1-larger);
+  }
+
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table-nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-1);
+  }
+
+}
+
+
+@media (min-width: 1023px) {
+  body {
+    padding-inline: 15rem;
+  }
+
+
+}
+
+@media (min-width: 1279px) {
+  body {
+    padding-inline: 25rem;
+  }
+
+  main h1 {
+    font-size: var(--step-1-larger);
+  }
+
+  main p,
+  .preparation-time ul li,
+  .preparation-time span,
+  .instructions span,
+  .ingredients ul li,
+  .instructions ol li,
+  .nutrition p,
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table- nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-0);
+  }
+
+  .preparation-time h3 {
+    font-size: var(--step--1-larger);
+  }
+
+  .ingredients h1,
+  .instructions h1,
+  .nutrition h1 {
+    font-size: var(--step-0-larger);
+  }
+
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table-nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-0);
+  }
+
+  @media (min-width: 2126px) {
+    .desktop-size {
+      padding-inline: 23rem;
+    }
+
+    .table-nutrition p {
+      max-width: 100%;
+    }
+
+    main h1 {
+      font-size: var(--step-3-larger);
+    }
+
+    main p,
+    .preparation-time ul li,
+    .preparation-time span,
+    .instructions span,
+    .ingredients ul li,
+    .instructions ol li,
+    .nutrition p,
+    .table-nutrition .kcal,
+    .table-nutrition .carbsgram,
+    .table- nutrition .proteingram,
+    .table-nutrition .fatgram {
+      font-size: var(--step-2);
+    }
+
+    .preparation-time h3 {
+      font-size: var(--step-1-larger);
+    }
+
+    .ingredients h1,
+    .instructions h1,
+    .nutrition h1 {
+      font-size: var(--step-2-larger);
+    }
+
+    .table-nutrition .kcal,
+    .table-nutrition .carbsgram,
+    .table-nutrition .proteingram,
+    .table-nutrition .fatgram {
+      font-size: var(--step-2);
+    }
+  }
+}
