@@ -1,6 +1,10 @@
 ✔ connect image Header.astro to public/assets/images @done(25-12-01 23:28)
   - Menambahkan import { Image } from 'astro:assets'; di frontmatter
-
-  - Hubungkan Header.astro ke Base.astro
-  - Hubungkan Base.astro ke pages/index.astro
-  - hidupkan dengan npm run dev
+✔ Hubungkan Header.astro ke Base.astro @done(25-12-02 18:41)
+✔ Hubungkan Base.astro ke pages/index.astro @done(25-12-02 18:41)
+✔ hidupkan dengan npm run dev @done(25-12-02 18:41)
+✔ Perbaikan style di ukuran 2k @done(25-12-02 20:39)
+✔ Tambahkan Preparation.astro di base.astro @done(25-12-02 20:39)
+✔ Tambahkan Ingredients.astro di base.astro @done(25-12-02 20:39)
+✔ Tambahkan Instructions.astro di base.astro @done(25-12-02 20:39)
+✔ Tambahkan Nutrition.astro di base.astro @done(25-12-02 20:39)

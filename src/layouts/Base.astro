@@ -1,9 +1,7 @@
 ---
 import Header from "./Header.astro";
 
-
-import '../styles/style.css';
-
+import "../styles/style.css";
 ---
 
 <!doctype html>
@@ -12,7 +10,6 @@ import '../styles/style.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="./style.css" />
     <title>ZAK | Recipe page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +20,11 @@ import '../styles/style.css';
   </head>
 
   <body>
-    <slot/>
+    <div class="desktop-size">
+      <Header />
+      <main>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
